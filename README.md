@@ -3,25 +3,27 @@ MQTT Broker Base
 
 Base app for creating MQTT broker on top of mosca.
 
-## Running the server
+## Install dependencies
 
-FIrst, install all the dependencies
 ```sh
 npm install
 ```
 
-Using nodemon
+## Running the server
+
+**Using default config file**
 ```sh
-APPCONFIG=index nodemon server.js
+npm start
 ```
 
-or using default configuration file which is `index.js`
+**Using custom config file**
 ```sh
-nodemon server.js
+APPCONFIG=dev npm start
 ```
 
-Using pm2
+where `dev` is file `dev.js` inside `config/` directory.
 
+**Debug log enabled**
 ```sh
-pm2 start server.js --name=mqtt-broker
+DEBUG=mqtt-broker-base,mqtt-broker-base:error npm start
 ```
