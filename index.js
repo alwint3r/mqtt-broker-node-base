@@ -1,10 +1,10 @@
 'use strict';
 
 const mosca = require(`mosca`);
+const config = require(`./config`);
 const logger = require(`./logger`);
-const config = require(`./config/${process.env.APPCONFIG || `index.js`}`);
 
-const moscaConfig = config.mosca(mosca);
+const moscaConfig = config.mosca;
 const server = new mosca.Server(moscaConfig);
 
 function onServerReady() {

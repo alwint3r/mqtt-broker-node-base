@@ -1,19 +1,24 @@
 {
   "name": "mqtt-broker-base",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "MQTT broker base app",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index"
   },
   "private": true,
   "author": "Alwin Arrasyid <alwin.ridd@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "debug": "^2.5.2",
+    "lodash": "^4.17.3",
     "mosca": "^2.2.0"
   },
+  "engine": {
+    "node": ">=4"
+  },
   "devDependencies": {
-    "eslint": "^3.11.1",
+    "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
