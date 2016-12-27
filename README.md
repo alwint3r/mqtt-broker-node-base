@@ -27,3 +27,7 @@ where `dev` is file `dev.js` inside `config/` directory.
 ```sh
 DEBUG=mqtt-broker-base,mqtt-broker-base:error npm start
 ```
+
+#### Yarn is supported!
+
+You can use `yarn` instead of npm. See [this link](https://shift.infinite.red/npm-vs-yarn-cheat-sheet-8755b092e5cc#.horxql2uy) for more info.
